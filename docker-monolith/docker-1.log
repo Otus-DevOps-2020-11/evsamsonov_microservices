@@ -1,0 +1,4 @@
+evgeny@MacBook-Air-Evgeny otus $ docker images
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+evsamsonov/ubuntu-tmp-file    latest              bbd43fdce04f        5 seconds ago       63.3MB
+ubuntu                        18.04               3339fde08fc3        12 days ago         63.3MB
