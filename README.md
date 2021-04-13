@@ -1,7 +1,7 @@
 # evsamsonov_microservices
 evsamsonov microservices repository
 
-## Docker 1
+## Docker 2
 
 Что сделано?
 
@@ -10,3 +10,15 @@ evsamsonov microservices repository
 - Создана докер хост система на ВМ в YC
 - Создан Docker образ с Reddit App
 - Образ запушен в Docker hub
+
+## Docker 3
+
+Что сделано?
+
+- Создана ВМ в Yandex Cloud с докер хост системой
+- Добавлены каталоги из архива reddit-microservices
+- Созданы Dockerfile для микросервисов post-py, comment, ui
+- Создана docker bridge-сеть, созданы и запущены контейнеры микросервисов
+- Проверена работоспособность приложения
+- Улучшен образ микросервиса ui
+- Создан docker volume для mongodb  
