@@ -13,21 +13,21 @@ services:
           - post_db
 
   post:
-    build: ./post-py
+    build: ../src/post-py
     image: ${USERNAME}/post:${POST_VERSION}
     networks:
       - back_net
       - front_net
 
   comment:
-    build: ./comment
+    build: ../src/comment
     image: ${USERNAME}/comment:${COMMENT_VERSION}
     networks:
       - back_net
       - front_net
 
   ui:
-    build: ./ui
+    build: ../src/ui
     image: ${USERNAME}/ui:${UI_VERSION}
     ports:
       - ${PORT}:9292/tcp
