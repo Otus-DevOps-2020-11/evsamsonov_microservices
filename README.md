@@ -149,3 +149,12 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Добавлены тесты в pipeline
 - Добавлены окружения dev, beta, production
 - Добавлено динамическое создание окружений на каждую запушенную ветку
+
+## Monitoring 1
+
+Что сделано?
+
+- Создан образ c prometheus c конфигом на мониторинг reddit app
+- Запуск прометея добавлен в docker-compose reddit app
+- Добавлен запуск node exprter в docker-compose reddit app
+- Требуемые для reddit app образы запущены в Docker hub https://hub.docker.com/u/evsamsonov
