@@ -158,3 +158,17 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Запуск прометея добавлен в docker-compose reddit app
 - Добавлен запуск node exprter в docker-compose reddit app
 - Требуемые для reddit app образы запущены в Docker hub https://hub.docker.com/u/evsamsonov
+
+## Monitoring 2
+
+Что сделано?
+
+- Добавлен отдельный docker-compose файл для мониторинга
+- Добавлен cAdvisor для мониоторинга docker контейнеров
+- Добавлена Grafana и настроена на получение данных с прометея
+- В Grafana импортирован дашборд Docker and system monitoring 
+- Создан дашборд UI_Service_Monitoring
+- Создан дашборд Business_Logic_Monitoring 
+- Добавлен alertmanager, настроена интеграция с Prometheous 
+- Добавлен алерт в slack на падение сервиса 
+- Образы запушены в Docker hub https://hub.docker.com/u/evsamsonov
