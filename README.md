@@ -196,3 +196,20 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Установлен сетевой драйвер calico
 - Применены манифесты приложения reddit app
 - Добавлена папка the_hard_way с набором файлом, так как без низ не проходят тесты в CI
+
+## Kubernetes 1
+
+Что сделано?
+
+- Для minikube создана ВМ в Yandex Cloud, так как локально не хватало места для запуска кластера
+- Установлен kubectl, minikube
+- Запущен кластер с помощью minikube
+- Доработаны Deployments для компонентов Reddit app
+- Созданы Service для обеспечения совместной работы компонентов Reddit app
+- Создан сервис типа NodePort для прокидывания порта во внешку
+- Запущен addon dashboard. Изучен веб интерфейс
+- Создан неймспейс dev 
+- Reddit app развернуто в неймспейсе dev. Из default namespace поды удалены
+- Добавлена переменная ENV для ui сервиса
+- Развернут kubernetes cluster c помощью Yandex Cloud Managed Service for kubernetes 
+- Развернуто приложение Reddit App в кластере
