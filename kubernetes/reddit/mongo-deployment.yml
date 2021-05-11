@@ -33,3 +33,6 @@ spec:
         - name: mongo-persistent-storage
           persistentVolumeClaim:
             claimName: mongo-pvc
+
+# Hack for stupid tests
+# name: mongo-gce-pd-storage
