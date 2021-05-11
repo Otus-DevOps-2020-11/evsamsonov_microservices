@@ -197,7 +197,7 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Применены манифесты приложения reddit app
 - Добавлена папка the_hard_way с набором файлом, так как без низ не проходят тесты в CI
 
-## Kubernetes 1
+## Kubernetes 2
 
 Что сделано?
 
@@ -213,3 +213,14 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Добавлена переменная ENV для ui сервиса
 - Развернут kubernetes cluster c помощью Yandex Cloud Managed Service for kubernetes 
 - Развернуто приложение Reddit App в кластере
+
+## Kubernetes 3
+
+Что сделано?
+
+- Добавлен сервис Load Balancer
+- Установлен Ingress Controller
+- Добавлен Ingress
+- Настроен прием HTTPS трафика
+- Настроен Network Policy
+- Настроено персистентное хранилище для mongodb
