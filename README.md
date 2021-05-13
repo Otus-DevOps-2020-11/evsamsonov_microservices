@@ -184,3 +184,15 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Создан Docker образ для Fluentd
 - Добавлены фильтры логов для reddit app в Fluentd
 - Добавлен трейсер Zipkin
+
+## Kubernetes 1
+
+Что сделано?
+
+- Добавлены шаблоны Deployment для компонентов reddit app
+- Созданы две ВМ для kubernetes кластера
+- Установлен master node
+- Приджойнена worker node
+- Установлен сетевой драйвер calico
+- Применены манифесты приложения reddit app
+- Добавлена папка the_hard_way с набором файлом, так как без низ не проходят тесты в CI
