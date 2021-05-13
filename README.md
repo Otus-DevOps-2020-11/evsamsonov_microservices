@@ -172,3 +172,15 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Добавлен alertmanager, настроена интеграция с Prometheous 
 - Добавлен алерт в slack на падение сервиса 
 - Образы запушены в Docker hub https://hub.docker.com/u/evsamsonov
+
+## Logging 1
+
+Что сделано?
+
+- Обновлена версия кода reddit app
+- Пересобраны образы reddit app
+- Создана ВМ и docker machine на ней
+- Описан docker compose EFK стэка
+- Создан Docker образ для Fluentd
+- Добавлены фильтры логов для reddit app в Fluentd
+- Добавлен трейсер Zipkin
