@@ -1,0 +1,12 @@
+---
+service:
+  internalPort: 5000
+  externalPort: 5000
+
+image:
+  repository: evsamsonov/post
+  tag: latest
+
+database:
+  host:
+  port: 27017

@@ -1,0 +1,12 @@
+---
+service:
+  internalPort: 9292
+  externalPort: 9292
+
+image:
+  repository: evsamsonov/comment
+  tag: latest
+
+database:
+  host:
+  port: 27017
