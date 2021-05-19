@@ -234,4 +234,6 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Созданы чарт для reddit app
 - Подготовлен кластер
 - Установлен gitlab из deprecated helm chart gitlab-omnibus
-- Созданы репозитории для компонентов reddit app и репозиторий для deploy
+- Созданы репозитории для компонентов reddit app и репозиторий для деплоя приложения
+- Настроен CI для компонентов reddit app и для деплоя приложения
+
