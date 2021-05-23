@@ -224,3 +224,16 @@ yc-user@docker-host:~$ ps ax | grep docker-proxy
 - Настроен прием HTTPS трафика
 - Настроен Network Policy
 - Настроено персистентное хранилище для mongodb
+
+## Kubernetes 4
+
+Что сделано?
+
+- Установлен helm 3
+- Созданы чарты для компонентов reddit app 
+- Созданы чарт для reddit app
+- Подготовлен кластер
+- Установлен gitlab из deprecated helm chart gitlab-omnibus
+- Созданы репозитории для компонентов reddit app и репозиторий для деплоя приложения
+- Настроен CI для компонентов reddit app и для деплоя приложения
+

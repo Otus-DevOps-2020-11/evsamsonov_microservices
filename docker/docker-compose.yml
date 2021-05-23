@@ -13,7 +13,7 @@ services:
           - post_db
 
   post:
-    build: ../src/post-py
+    build: ../src/post
     image: ${USERNAME}/post:${POST_VERSION}
     networks:
       - back_net
